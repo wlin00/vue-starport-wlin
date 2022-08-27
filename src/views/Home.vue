@@ -7,13 +7,23 @@
         <router-link to="/detail">Go</router-link>
       </Button>
     </div>
+    <Proxy style="width:300px;height:300px;margin: 50px 0 50px 50px;" />
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts">
   import { onMounted, ref } from "vue"
   import Topnav from '../components/TopNav.vue'
   import Button from '../components/Button.vue'
+  import Proxy from '../components/Proxy.vue'
+
+  export default {
+    components: {
+      Topnav,
+      Button,
+      Proxy,
+    },
+  }
 
 
 </script>
