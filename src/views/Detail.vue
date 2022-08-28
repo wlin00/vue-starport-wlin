@@ -7,7 +7,10 @@
         <router-link to="/">Back</router-link>
       </Button>
     </div>
-    <Proxy style="width:400px;height:400px;border-radius:50%;margin: 50px 0 50px 350px;" />
+    
+    <div class="detail__proxyWrap">
+      <Proxy style="width:400px;height:400px;border-radius:50%;"/>
+    </div>
   </div>
 </template>
 
@@ -32,8 +35,16 @@
     background: #5e9889;
     box-sizing: border-box;
     border: 1px solid #5e9889;
+    padding: 0;
     a{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      padding: 0 16px;
       color: #fff;
+      width: 100%;
+      height: 100%;
       text-decoration: none;
       user-select: none;
       &:active {
@@ -45,6 +56,10 @@
     font-size: 22px;
     font-weight: bold;
     color: #fff;
+    margin: 20px;
+  }
+  &__proxyWrap {
+    display: inline-flex;
     margin: 20px;
   }
 }

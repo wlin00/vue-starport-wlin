@@ -7,7 +7,9 @@
         <router-link to="/detail">Go</router-link>
       </Button>
     </div>
-    <Proxy style="width:300px;height:300px;margin: 50px 0 50px 50px;" />
+    <div class="home__proxyWrap">
+      <Proxy style="width:300px;height:300px;"/>
+    </div>
   </div>
 </template>
 
@@ -34,7 +36,15 @@
     background: #5e9889;
     box-sizing: border-box;
     border: 1px solid #5e9889;
+    padding: 0;
     a{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      padding: 0 16px;
       color: #fff;
       text-decoration: none;
       user-select: none;
@@ -48,6 +58,13 @@
     font-weight: bold;
     color: #fff;
     margin: 20px;
+  }
+  &__proxyWrap {
+    display: inline-flex;
+    margin: 20px;
+    width: 100%;
+    // justify-content: flex-start;
+    // transform:translateX(100%)
   }
 }
 
