@@ -6,7 +6,7 @@
       <use xlink:href="#icon-king"></use>
     </svg>
   </router-link>
-  <span class="title">vue-startPort-wlin</span>
+  <span class="title">vue-starPort-wlin</span>
   <ul class="menu">
     <li class="menu-li">
       <a href="https://github.com/wlin00" target="_blank">github</a>

@@ -10,13 +10,13 @@ export default {
     globals: {
       vue: 'Vue'
     },
-    name: 'vue-startport-wlin',
-    file: 'dist/vue-startport-wlin.js',
+    name: 'vue-starport-wlin',
+    file: 'dist/vue-starport-wlin.js',
     format: 'umd',
     plugins: [terser()]
   }, {
-    name: 'vue-startport-wlin',
-    file: 'dist/vue-startport-wlin.esm.js',
+    name: 'vue-starport-wlin',
+    file: 'dist/vue-starport-wlin.esm.js',
     format: 'es',
     plugins: [terser()]
   }],

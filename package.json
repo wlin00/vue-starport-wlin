@@ -1,12 +1,12 @@
 {
-  "name": "vue-startport-wlin",
+  "name": "vue-starport-wlin",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build"
   },
-  "main": "dist/vue-startport-wlin.js",
-  "module": "dist/vue-startport-wlin.esm.js",
+  "main": "dist/vue-starport-wlin.js",
+  "module": "dist/vue-starport-wlin.esm.js",
   "resolutions": {
     "node-sass": "npm:sass@1.26.11"
   },
