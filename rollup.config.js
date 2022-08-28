@@ -5,17 +5,17 @@ import dartSass from 'sass';
 import { terser } from "rollup-plugin-terser"
 
 export default {
-  input: 'src/index.ts',
+  input: 'src/main.ts',
   output: [{
     globals: {
       vue: 'Vue'
     },
-    name: 'wlin-ui-3',
+    name: 'vue-startport-wlin',
     file: 'dist/vue-startport-wlin.js',
     format: 'umd',
     plugins: [terser()]
   }, {
-    name: 'wlin-ui-3',
+    name: 'vue-startport-wlin',
     file: 'dist/vue-startport-wlin.esm.js',
     format: 'es',
     plugins: [terser()]

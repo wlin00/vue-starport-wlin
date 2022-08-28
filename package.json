@@ -5,8 +5,8 @@
     "dev": "vite",
     "build": "vite build"
   },
-  "main": "dist/lib/vue-startport-wlin.js",
-  "module": "dist/lib/vue-startport-wlin.esm.js",
+  "main": "dist/vue-startport-wlin.js",
+  "module": "dist/vue-startport-wlin.esm.js",
   "resolutions": {
     "node-sass": "npm:sass@1.26.11"
   },
