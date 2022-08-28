@@ -6,13 +6,14 @@
       <use xlink:href="#icon-king"></use>
     </svg>
   </router-link>
+  <span class="title">vue-startPort-wlin</span>
   <ul class="menu">
     <li class="menu-li">
       <a href="https://github.com/wlin00" target="_blank">github</a>
     </li>
     <li class="menu-li">
-      <router-link v-if="currentRoute() === '/'" to="/detail">详情</router-link>
-      <router-link v-else to="/">主页</router-link>
+      <router-link v-if="currentRoute() === '/'" to="/detail">detail</router-link>
+      <router-link v-else to="/">home</router-link>
     </li>
   </ul>
   <svg v-if="toggleMenuButtonVisible" class="toggleAside" @click="toggleMenu">
@@ -66,6 +67,8 @@ $color: #007974;
   color: $color;
   display: flex;
   padding: 16px;
+  box-sizing: border-box;
+  height: 70px;
   z-index: 998;
   background: #fff;
   position: fixed;
@@ -74,6 +77,9 @@ $color: #007974;
   width: 100%;
   justify-content: center;
   align-items: center;
+  .title {
+    font-weight: bold;
+  }
   .doc {
     font-size: 16px;
     font-weight: bolder;

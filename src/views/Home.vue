@@ -6,13 +6,15 @@
       <Button class="home__routerBtn"  size="big">
         <router-link to="/detail">Go</router-link>
       </Button>
-      <Button class="home__routerBtn"  size="big" @click="enlarge">EnLarge</Button>
-      <Button class="home__routerBtn"  size="big" @click="reset">Reset</Button>
+      <Button class="home__routerBtn action"  size="big" @click="enlarge">EnLarge</Button>
+      <Button class="home__routerBtn action"  size="big" @click="reset">Reset</Button>
     </div>
     <div class="home__proxyWrap">
-      {{size}}
       <Proxy :style="{ width: `${size}px`, height: `${size}px` }"/>
     </div>
+    <p class="home__introduce">
+      一个基于vue3的跨路由平滑过渡动画的小demo~ 
+    </p>
   </div>
 </template>
 
@@ -30,7 +32,7 @@
       Proxy,
     },
     setup(props) {
-      const size = ref<any>(useStorage('size',300))
+      const size = ref<any>(useStorage('size',200))
       const computeStyle = computed(() => {
         return {
           width: `${size.value ?? 0}px`,
@@ -41,7 +43,7 @@
         size.value += 20
       }
       const reset = () => {
-        size.value = 300
+        size.value = 200
       }
       return {
         size,
@@ -64,6 +66,9 @@
     padding: 0;
     color: #fff;
     user-select: none;
+    &.action {
+      padding: 0 16px;
+    }
     a{
       display: inline-flex;
       align-items: center;
@@ -87,11 +92,17 @@
     margin: 20px;
   }
   &__proxyWrap {
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
     margin: 20px;
     width: 100%;
-    // justify-content: flex-start;
-    // transform:translateX(100%)
+  }
+  &__introduce {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 0 20px;
   }
 }
 

@@ -1,5 +1,9 @@
 <template>
-  <div ref="proxyRef" style="background: gray;" :style="context.attrs.style">
+  <!-- to debug ,add: background: gray -->
+  <div 
+    ref="proxyRef" 
+    :style="context.attrs.style"
+  >
     <slot/>
   </div>
 </template>
