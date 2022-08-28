@@ -9,7 +9,7 @@
     </div>
     
     <div class="detail__proxyWrap">
-      <Proxy style="width:400px;height:400px;border-radius:50%;"/>
+      <Proxy :style="computeStyle"/>
     </div>
   </div>
 </template>
@@ -18,6 +18,8 @@
   import Topnav from '../components/TopNav.vue'
   import Button from '../components/Button.vue'
   import Proxy from '../components/Proxy.vue'
+  import { ref, computed } from 'vue'
+  import { useStorage } from '@vueuse/core'
 
   export default {
     components: {
@@ -25,6 +27,20 @@
       Button,
       Proxy,
     },
+    setup(props) {
+      const size = ref<any>(useStorage('size',300))
+      const computeStyle = computed(() => {
+        return {
+          width: `${size.value ?? 0}px`,
+          height: `${size.value ?? 0}px`,
+          borderRadius: `50%`,
+        }
+      })
+      return {
+        size,
+        computeStyle,
+      }
+    }
   }
 
 </script>
