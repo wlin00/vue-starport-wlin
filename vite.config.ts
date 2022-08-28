@@ -2,6 +2,8 @@
 // import Unocss from '@unocss/vite'
 
 export default {
+  base: './',
+  assetsDir: 'assets',
   // plugins: [
   //   Unocss({
   //     presets: [
