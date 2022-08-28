@@ -5,6 +5,6 @@ git init &&
 git add . &&
 git commit -m "update" &&
 git branch -M master &&
-git remote add origin git@github.com:wlin00/wlinUiVite.git &&
+git remote add origin git@github.com:wlin00/vue-startport-wlin.git &&
 git push -f -u origin master &&
 cd -
